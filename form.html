@@ -12,29 +12,31 @@
       style="border-radius: 50%"
     />
   </head>
-  <body class="container relative">
+  <body class="container relative h-card">
     <div class="header">
       <div class="container-header">
-        <div><img class="logo" src="assets/nadin-logo.png" alt="" /></div>
-        <h1>Nadin Amizah Fan Page</h1>
+        <div>
+          <img class="logo u-photo" src="assets/nadin-logo.png" alt="" />
+        </div>
+        <h1 class="p-name">Nadin Amizah Fan Page</h1>
       </div>
     </div>
 
     <div class="container-nav-side relative">
       <div class="container-nav relative">
         <nav class="nav sticky">
-          <a href="index.html" class="nav-item">Home</a>
-          <a href="form.html" class="nav-item">Form</a>
-          <a href="tabel.html" class="nav-item">Table</a>
+          <a href="index.html" class="nav-item u-url">Home</a>
+          <a href="form.html" class="nav-item u-url">Form</a>
+          <a href="tabel.html" class="nav-item u-url">Table</a>
         </nav>
       </div>
 
-      <main class="main">
-        <h1 class="title-main">Formulir</h1>
-        <h1 class="title-idol-name">PENGGEMAR NADIN AMIZAH</h1>
+      <main class="main h-entry">
+        <h1 class="title-main p-name">Formulir</h1>
+        <h1 class="title-idol-name p-name">PENGGEMAR NADIN AMIZAH</h1>
 
         <div class="form-container">
-          <form action="tabel.html" method="GET">
+          <form action="tabel.html" method="GET" class="h-card">
             <label for="nama">Nama:</label>
             <input
               type="text"
@@ -42,6 +44,7 @@
               name="nama"
               placeholder="Nama Anda"
               required
+              class="p-name"
             />
 
             <label for="asal">Asal:</label>
@@ -51,6 +54,7 @@
               name="asal"
               placeholder="Kota Asal Anda"
               required
+              class="p-adr"
             />
 
             <label>Judul Lagu Kesukaan Nadin Amizah:</label>
@@ -80,6 +84,7 @@
               />
               <label for="song3">Amin Paling Serius</label>
             </div>
+
             <label for="frequency"
               >Seberapa sering mendengarkan lagu Nadin Amizah dalam
               seminggu?</label
