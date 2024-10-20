@@ -1,4 +1,3 @@
-/* CSS Reset - Menghilangkan Padding, Margin, dan Box Sizing Default */
 * {
   margin: 0;
   padding: 0;
@@ -6,24 +5,22 @@
 }
 
 @font-face {
-  font-family: "FlatorySerif"; /* Nama yang akan Anda gunakan di CSS */
-  src: url("assets/flatory-serif-medium-semi-condensed.ttf") format("truetype"); /* Sesuaikan ekstensi */
+  font-family: "FlatorySerif";
+  src: url("assets/flatory-serif-medium-semi-condensed.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "DejavuSerif"; /* Nama yang akan Anda gunakan di CSS */
-  src: url("assets/dejavu-serif.ttf") format("truetype"); /* Sesuaikan ekstensi */
+  font-family: "DejavuSerif";
+  src: url("assets/dejavu-serif.ttf") format("truetype");
 }
 
-/* Mengatur Ukuran Font dan Line Height Default */
 html {
-  font-size: 100%; /* 16px secara default */
+  font-size: 100%;
   line-height: 1.5;
-  -webkit-text-size-adjust: 100%; /* Mencegah font scaling di iOS */
+  -webkit-text-size-adjust: 100%;
 }
 
-/* Mengatur Tampilan Block atau Inline Sesuai Standar */
 body,
 h1,
 h2,
@@ -39,34 +36,27 @@ dd {
   margin: 0;
 }
 
-/* Default Style untuk List */
 ul,
 ol {
   list-style: none;
 }
 
-/* Hilangkan Border dan Tampilan Default pada Link */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Reset untuk Table */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* Mengatur Gambar agar Tidak Melebihi Kontainer */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Mengatur Form Element */
-
-/* Hilangkan Outline Fokus Kecuali untuk Aksesibilitas */
 :focus {
   outline: none;
 }
@@ -76,18 +66,14 @@ img {
   color: white;
 }
 
-/* Tampilan Default Button */
 button {
   border: none;
   background: none;
   cursor: pointer;
 }
 
-/* Hilangkan Scrollbar pada Desktop */
-
 .container {
   width: 100%;
-
   margin: 0 auto;
 }
 
@@ -99,7 +85,6 @@ button {
 .header {
   background-image: url("https://tse2.mm.bing.net/th?id=OIP.9StWxQedT42kFL1PWKhmggHaDt&pid=Api");
   display: flex;
-
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -120,16 +105,15 @@ button {
 .container-header {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
-  /* gap: 10px;  */
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 10px;
 }
+
 .container-header h1 {
   text-align: center;
 }
@@ -149,8 +133,6 @@ button {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* background-color: salmon; */
-
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -166,8 +148,6 @@ button {
 .nav-item:hover {
   background-color: rgb(172, 170, 171);
   border-radius: 10px;
-
-  /* color: white; */
 }
 
 .body {
@@ -177,15 +157,11 @@ button {
 .main {
   background-image: url("assets/bg-main.png");
   width: 100%;
-
   background-size: cover;
 }
 
 .container-img-nadin-main {
-  /* display: flex; */
   width: 100%;
-
-  /* height: 100%; */
 }
 
 .main {
@@ -205,6 +181,7 @@ button {
   text-align: center;
   padding-top: 20px;
 }
+
 .title-idol-name {
   font-size: 3.5em;
   font-weight: bold;
@@ -212,8 +189,6 @@ button {
   border-bottom: 2px solid black;
   width: 100%;
   text-align: center;
-
-  /* padding: 20px; */
 }
 
 .container-main-idol {
@@ -264,13 +239,12 @@ button {
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  /* max-width: 500px; */
 }
 
 form label {
   display: block;
   margin-bottom: 8px;
-  color: #4a302b; /* Dark brown */
+  color: #4a302b;
   font-weight: bold;
 }
 
@@ -280,9 +254,9 @@ form input[type="range"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 2px solid #575656; /* Medium brown */
+  border: 2px solid #575656;
   border-radius: 5px;
-  background-color: #fdf2ec; /* Off-white */
+  background-color: #fdf2ec;
 }
 
 form input[type="radio"] {
@@ -303,7 +277,7 @@ form textarea {
 form input[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: #807e7d; /* Dark brown */
+  background-color: #807e7d;
   color: white;
   border: none;
   border-radius: 5px;
@@ -313,7 +287,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: #36312e; /* Darker brown on hover */
+  background-color: #36312e;
 }
 
 footer {
@@ -356,11 +330,6 @@ footer {
   align-items: center;
 }
 
-/* .footer-content,
-.footer-bottom {
-  width: min-content;
-} */
-
 .footer-left {
   flex: 1;
   text-align: left;
@@ -395,7 +364,7 @@ footer p {
   width: 100%;
   max-height: 500px;
 
-  overflow-y: auto; /* Scrollable content */
+  overflow-y: auto;
   border: 1px solid #ddd;
 }
 
@@ -410,7 +379,7 @@ thead {
   background-color: #807e7d;
   color: white;
   position: sticky;
-  top: 0; /* Sticky header */
+  top: 0;
 }
 
 th,
@@ -419,7 +388,6 @@ td {
   text-align: center;
   border-collapse: collapse;
   border: 1px solid black;
-  /* border-bottom: 1px solid #ddd; */
 }
 
 th {
@@ -428,7 +396,7 @@ th {
 
 th:first-child,
 td:first-child {
-  width: 5%; /* First column (No) has smaller width */
+  width: 5%;
 }
 
 tr:nth-child(even) {
@@ -437,15 +405,14 @@ tr:nth-child(even) {
 
 th:last-child,
 td:last-child {
-  width: 35%; /* Last column (Pesan dan kesan) has larger width */
+  width: 35%;
 }
 
 tbody tr:hover {
-  background-color: #f1f1f1; /* Hover effect on rows */
+  background-color: #f1f1f1;
 }
 
 tbody {
-  /* display: block; */
   overflow-x: auto;
 }
 
@@ -465,9 +432,6 @@ tbody {
   }
 }
 
-/* Extra Small Devices (<576px) */
-
-/* Small Devices (≥576px) */
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -479,7 +443,6 @@ tbody {
   }
 }
 
-/* Medium Devices (≥768px) */
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -504,13 +467,10 @@ tbody {
   }
 }
 
-/* Large Devices (≥992px) */
 @media (min-width: 992px) {
   .container-nav-side {
     display: flex;
     flex-direction: row;
-    /* gap: 10px; */
-    /* align-self: start; */
   }
 
   .container-nav {
@@ -526,30 +486,23 @@ tbody {
     flex-direction: column;
   }
 
-  /* .nav a {
-    width: min-content;
-  } */
-
   .container {
     max-width: 960px;
   }
 }
 
-/* Extra Large Devices (≥1200px) */
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
 }
 
-/* Extra Extra Large Devices (≥1400px) */
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
 }
 
-/* Full Width - Fluid Container */
 .container {
-  width: 100%; /* Full width on all devices */
+  width: 100%;
 }
